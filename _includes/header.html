@@ -58,7 +58,9 @@
 
                 <h1 class="logo">
 
-                    <a href="{{ site.baseurl | prepend: site.url }}"><img src="https://olp.su/wp-content/themes/twentytwelve/images/logo.png" alt=""></a>
+                    <a href="{{ site.baseurl | prepend: site.url }}">
+                        <img src="{{ '/images/logo.png' | prepend: site.baseurl | prepend: site.url }}" alt="">
+                    </a>
 
                 </h1>
 
