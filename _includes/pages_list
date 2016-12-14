@@ -2,11 +2,23 @@
     {% if node.group contains group %}
         {% if page.url == node.url %}
             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
-                <a href="{{node.url | prepend: site.baseurl | prepend: site.url}}" class="active">{{node.title}}</a>
+                <a href="{{node.url | prepend: site.baseurl | prepend: site.url}}" class="active">
+                    {% if node.is_bold %}
+                        <strong>{{node.title}}</strong>
+                    {% else %}
+                        {{node.title}}
+                    {% endif %}
+                </a>
             </li>
         {% else %}
             <li class="menu-item menu-item-type-custom menu-item-object-custom current_page_item ">
-                <a href="{{node.url | prepend: site.baseurl | prepend: site.url}}" class="active">{{node.title}}</a>
+                <a href="{{node.url | prepend: site.baseurl | prepend: site.url}}" class="active">
+                    {% if node.is_bold %}
+                        <strong>{{node.title}}</strong>
+                    {% else %}
+                        {{node.title}}
+                    {% endif %}
+                </a>
             </li>
         {% endif %}
     {% endif %}

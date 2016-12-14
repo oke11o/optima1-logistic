@@ -455,6 +455,11 @@ a:hover.readmore {
     color: #fff;
     background: #31A3DD
 }
+.site-menu.right-menu li.current-menu-item > a strong, .site-menu.right-menu li.sfHover > a strong, .site-menu.right-menu li a:hover strong {
+    border-color: #31A3DD;
+    color: #fff;
+    background: #31A3DD
+}
 
 .site-menu.right-menu ul ul {
     background: #31A3DD;
@@ -4033,6 +4038,10 @@ ul.contact li i {
 }
 
 #footer .credit .links li a {
+    color: inherit;
+}
+
+#footer .credit .links li a strong {
     color: inherit;
 }
 
