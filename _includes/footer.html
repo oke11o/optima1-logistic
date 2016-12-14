@@ -10,20 +10,15 @@
                 <div class="col-md-8 text-right">
                     <div class="menu-bottom-container">
                         <div class="menu-menu-bottom-container">
+                            <!--<ul id="menu-menu-bottom" class="list-unstyled bottom-0 links">-->
+                                <!--<li id="menu-item-21"-->
+                                    <!--class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a-->
+                                        <!--href="http://olp.su/транспортные-услуги">Транспортные услуги</a></li>-->
+                            <!--</ul>-->
                             <ul id="menu-menu-bottom" class="list-unstyled bottom-0 links">
-                                <li id="menu-item-21"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a
-                                        href="http://olp.su/транспортные-услуги">Транспортные услуги</a></li>
-                                <li id="menu-item-22"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a
-                                        href="http://olp.su/негабаритный-груз">Негабаритный груз</a></li>
-                                <li id="menu-item-23"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a
-                                        href="http://olp.su/сборный-груз">Сборный груз</a></li>
-                                <li id="menu-item-145"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><a
-                                        href="http://olp.su/мультимодальные-перевозки">Мультимодальные перевозки</a>
-                                </li>
+                                {% assign pages_list = site.pages | sort:"menusort" %}
+                                {% assign group = 'bottommenu' %}
+                                {% include pages_list %}
                             </ul>
                         </div>
                     </div>
