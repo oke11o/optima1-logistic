@@ -129,8 +129,8 @@
         }
     </style>
 
-    <link rel='stylesheet' id='contact-form-7-css' href='https://olp.su/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all'/>
-    <link rel='stylesheet' id='rs-plugin-settings-css' href='https://olp.su/wp-content/plugins/revslider/rs-plugin/css/settings.css?rev=4.3.4&#038;ver=4.5.4' type='text/css' media='all'/>
+    <link rel='stylesheet' id='contact-form-7-css' href="{{ '/css/contact-form-7-styles.css' | prepend: site.baseurl | prepend: site.url }}" type='text/css' media='all'/>
+    <link rel='stylesheet' id='rs-plugin-settings-css' href="{{ '/css/revslider-rs-plugin-settings.css' | prepend: site.baseurl | prepend: site.url }}" type='text/css' media='all'/>
 
     <style id='rs-plugin-settings-inline-css' type='text/css'>
         .tp-caption a {
@@ -147,18 +147,17 @@
             color: #ffffff;
         }
     </style>
-    <link rel='stylesheet' id='rs-plugin-captions-css' href='https://olp.su/wp-content/plugins/revslider/rs-plugin/css/captions.php?rev=4.3.4&#038;ver=4.5.4' type='text/css' media='all'/>
-    <link rel='stylesheet' id='twentytwelve-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext,cyrillic,cyrillic-ext' type='text/css' media='all'/>
-    <link rel='stylesheet' id='twentytwelve-style-css' href='https://olp.su/wp-content/themes/twentytwelve/style.css?ver=4.5.4' type='text/css' media='all'/>
+    <link rel='stylesheet' id='rs-plugin-captions-css' href="{{ '/css/captions.css' | prepend: site.baseurl | prepend: site.url }}" type='text/css' media='all'/>
+    <link rel='stylesheet' id='twentytwelve-fonts-css' href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext,cyrillic,cyrillic-ext" type='text/css' media='all'/>
+    <link rel='stylesheet' id='twentytwelve-style-css' href="{{ '/css/twentytwelve.css' | prepend: site.baseurl | prepend: site.url }}" type='text/css' media='all'/>
 
     <!--[if lt IE 9]>
-    <link rel='stylesheet' id='twentytwelve-ie-css' href='https://olp.su/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all'/>
+    <link rel='stylesheet' id='twentytwelve-ie-css' href="{{ '/css/twentytwelve-ie.css' | prepend: site.baseurl | prepend: site.url }}" type='text/css' media='all'/>
     <![endif]-->
 
-    <script type='text/javascript' src='https://olp.su/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-    <script type='text/javascript' src='https://olp.su/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-    <script type='text/javascript' src='https://olp.su/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?rev=4.3.4&#038;ver=4.5.4'></script>
-    <script type='text/javascript' src='https://olp.su/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.3.4&#038;ver=4.5.4'></script>
+    <script type='text/javascript' src="{{ '/js/jquery-migrate.1.4.1.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script type='text/javascript' src="{{ '/js/jquery.themepunch.plugins.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script type='text/javascript' src="{{ '/js/jquery.themepunch.revolution.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 
     <style type="text/css">
         .recentcomments a {
