@@ -9,21 +9,15 @@
 
     <title>Международные транспортные перевозки - OLP</title>
 
-    <link rel="shortcut icon" href="https://olp.su/wp-content/themes/twentytwelve/favicon.ico"/>
-
-    <link href="https://olp.su/wp-content/themes/twentytwelve/css/bootstrap.css" rel="stylesheet">
-
-
+    <link href="{{ '/css/bootstrap.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
     <link href="{{ '/css/font-awesome.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
-
-    <link href="https://olp.su/wp-content/themes/twentytwelve/css/plugin.css" rel="stylesheet">
-
-    <link href="https://olp.su/wp-content/themes/twentytwelve/css/responsive.css" rel="stylesheet">
+    <link href="{{ '/css/plugin.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
+    <link href="{{ '/css/responsive.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
 
-    <script src="https://olp.su/wp-content/themes/twentytwelve/js/jquery.js"></script>
+    <script src="{{ '/js/jquery.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 
 
     <script type='text/javascript'>//<![CDATA[
@@ -72,21 +66,17 @@
 
     <!--[if lt IE 9]>
 
-    <script src="https://olp.su/wp-content/themes/twentytwelve/js/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 
-    <script src="https://olp.su/wp-content/themes/twentytwelve/js/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 
     <![endif]-->
 
-
-    <link rel="alternate" type="application/rss+xml" title="OLP &raquo; Лента" href="https://olp.su/feed/"/>
-    <link rel="alternate" type="application/rss+xml" title="OLP &raquo; Лента комментариев"
-          href="https://olp.su/comments/feed/"/>
     <script type="text/javascript">
         window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
+            "baseUrl": 'https://s.w.org/images/core/emoji/72x72/',
             "ext": ".png",
-            "source": {"concatemoji": "https:\/\/olp.su\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}
+            "source": {"concatemoji": '{{ "/js/wp-emoji-release.min.js" | prepend: site.baseurl | prepend: site.url }}'}
         };
         !function (a, b, c) {
             function d(a) {
