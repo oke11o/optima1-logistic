@@ -4385,7 +4385,8 @@ ul.contact li i {
 #mobile-menu .mobile-menu li a {
     display: block;
     padding: 10px 20px;
-    border-bottom: 1px solid #2c2c2c
+    border-bottom: 1px solid #2c2c2c;
+    color: white;
 }
 
 #mobile-menu .mobile-menu li li a {
