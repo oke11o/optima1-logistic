@@ -1,0 +1,88 @@
+<div class="small-icon clearfix">
+
+
+    <div class="clearfix">
+
+        <div class="sidebar-form" style="padding: 10px;background-color: #d8d8d8;">
+
+            <div class="screen-reader-response"></div>
+
+            <form action="http://formspree.io/info@optimal-logistic.ru" method="post" class="" enctype="multipart/form-data">
+
+                <h4>Быстрый запрос</h4>
+
+                <div class="form-group">
+                    <label for="sidebar-form-from">Откуда *</label>
+                    <input type="text" class="form-control" name="from" id="sidebar-form-from" placeholder="Откуда" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-to">Куда *</label>
+                    <input type="text" class="form-control" name="to" id="sidebar-form-to" placeholder="Куда" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-cargo">Название груза *</label>
+                    <input type="text" class="form-control" name="cargo" id="sidebar-form-cargo" placeholder="Название груза" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-weight">Вес *</label>
+                    <input type="text" class="form-control" name="weight" id="sidebar-form-weight" placeholder="Вес" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-volume">Объем</label>
+                    <input type="text" class="form-control" name="volume" id="sidebar-form-volume" placeholder="Объем" >
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-message">Дополнительная информация</label>
+                    <textarea name="message" id="sidebar-form-message" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-name">Ваше имя *</label>
+                    <input type="text" class="form-control" name="name" id="sidebar-form-name" placeholder="Ваше имя" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="sidebar-form-email">E-mail *</label>
+                    <input type="email" class="form-control" name="email" id="sidebar-form-email" placeholder="E-mail" required >
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit"/>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="divider striptags"></div>
+
+    <div class="small-icon border clearfix">
+
+        <div class="icon">
+
+            <i class="fa"><img src="https://olp.su/wp-content/themes/twentytwelve/images/map.png"
+                               alt=""></i>
+
+        </div>
+
+        <div class="icon-content">
+
+            <h4 class="heading-title" style="margin: 0px 0 5px 0;">ЦЕНТРАЛЬНЫЙ ОФИС</h4>
+            <p>
+                {{ site.address }}<br>
+                тел.: {{ site.site_phone }} <br>
+                email: <a href="mailto:{{ site.site_email }}">{{ site.site_email }}</a>
+            </p>
+        </div>
+
+    </div>
+
+
+</div>

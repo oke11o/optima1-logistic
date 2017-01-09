@@ -634,56 +634,7 @@ layout: default
 
         <div id="sidebar" class="sidebar col-md-4">
 
-            <div class="small-icon clearfix">
-
-                <div class="small-icon clearfix">
-                </div>
-
-                <div class="small-icon solid clearfix top-30">
-
-                    <div class="icon">
-
-                        <i class="fa"><img src="https://olp.su/wp-content/themes/twentytwelve/images/coin.png"
-                                           alt=""></i>
-
-                    </div>
-
-                    <div class="icon-content">
-
-                        <h3 class="heading-title2">
-
-                            <a href="{{ '/form.html' | prepend: site.baseurl | prepend: site.url }}"> Запрос стоимости </a>
-
-                        </h3>
-
-                    </div>
-
-                </div>
-
-
-                <div class="divider striptags"></div>
-
-                <div class="small-icon border clearfix">
-
-                    <div class="icon">
-
-                        <i class="fa"><img src="https://olp.su/wp-content/themes/twentytwelve/images/map.png"
-                                           alt=""></i>
-
-                    </div>
-
-                    <div class="icon-content">
-
-                        <h4 class="heading-title">ЦЕНТРАЛЬНЫЙ ОФИС</h4>
-                        <p>115516, г. Москва. Кавказский бульвар 57, офис 321<br>
-                            тел.: +7 (499) 343 38 82 <br>
-                    </div>
-
-                </div>
-
-
-            </div>
-
+            {% include sidebar_right.html %}
 
         </div>
 
